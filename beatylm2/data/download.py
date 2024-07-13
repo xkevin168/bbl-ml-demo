@@ -89,7 +89,7 @@ def download_images(dst_path: Union[Path, str], num_samples: int, **kwargs):
     return len(files_downloaded), files_downloaded, num_tries
 
 if __name__ == "__main__":
-    num, files, num_tries = download_images("data/images", num_samples=1000, limit=200)
+    num, files, num_tries = download_images("data/images", num_samples=50, limit=200)
     print(f"Downloaded: {num} images")
     print(f"Files: {files}")
     print(f"final offset: {num_tries}")
