@@ -7,33 +7,14 @@ import time
 import random
 from tqdm import tqdm
 
-''' Definition of get_image_list from bbl-ml-demo/beatylm2/utils/data_utils.py:
-from pygbif import occurrences as occ
-
-def get_image_list(**kwargs):
-    # For arguments see: https://techdocs.gbif.org/en/openapi/v1/occurrence#/Searching%20occurrences/
-    
-    # default search arguments
-    search_args = {
-        "datasetKey": "07fd0d79-4883-435f-bba1-58fef110cd13",
-        "mediaType": "StillImage",
-        "limit": 1000,
-    }
-
-    # override default search arguments with user-provided arguments
-    search_args.update(kwargs)
-
-    # search for occurrences
-    query = occ.search(**search_args)
-
-    # extract the list of image files
-    list_of_files = []
-    for record in query["results"]:
-        list_of_files.append(record["catalogNumber"] + ".jpg")
-
-    return list_of_files'''
-
 def download_images(dst_path: Union[Path, str], num_samples: int, **kwargs):
+    '''
+    Download images from the Beaty Biodiversity Museum collection.
+    Args:
+        dst_path (Union[Path, str]): The destination directory to save the images.
+        num_samples (int): The number of images to download.
+        **kwargs: Additional keyword arguments to pass to the get_image_list function. see: https://techdocs.gbif.org/en/openapi/v1/occurrence#/Searching%20occurrences/
+    '''
 
     # ensure the destination directory exists
     dst_path = Path(dst_path)
