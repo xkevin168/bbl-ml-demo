@@ -5,8 +5,8 @@ A proof of concept project to utilize machine learning techniques for handling, 
 ## Data Download
 To download images from the beaty collection:
 1. Clone the repo
-2. Run `git checkout ethan-dev`
-3. `cd` into the repo
+2. `cd` into the repo
+3. Run `git checkout ethan-dev`
 4. Make sure you are in the venv or conda env you want to work with
 5. Run `pip install -e .`
     - this will install the repo as a package, the -e flag tells it that you are editing the package so that when you make changes, you don't have to reinstall the package each time
