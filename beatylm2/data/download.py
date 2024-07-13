@@ -10,10 +10,10 @@ from tqdm import tqdm
 def download_images(dst_path: Union[Path, str], num_samples: int, **kwargs):
     '''
     Download images from the Beaty Biodiversity Museum collection.
-    Args:
-        dst_path (Union[Path, str]): The destination directory to save the images.
-        num_samples (int): The number of images to download.
-        **kwargs: Additional keyword arguments to pass to the get_image_list function. see: https://techdocs.gbif.org/en/openapi/v1/occurrence#/Searching%20occurrences/
+    args:
+        - dst_path (Union[Path, str]): The destination directory to save the images.
+        - num_samples (int): The number of images to download.
+        - **kwargs: Additional keyword arguments to pass to the get_image_list function. see: https://techdocs.gbif.org/en/openapi/v1/occurrence#/Searching%20occurrences/
     '''
 
     # ensure the destination directory exists
