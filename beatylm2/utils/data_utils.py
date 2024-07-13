@@ -1,7 +1,8 @@
 from pygbif import occurrences as occ
 
 def get_image_list(**kwargs):
-    # For arguments see: https://techdocs.gbif.org/en/openapi/v1/occurrence#/Searching%20occurrences/
+    ''' For arguments see: https://techdocs.gbif.org/en/openapi/v1/occurrence#/Searching%20occurrences/
+    '''
     
     # default search arguments
     search_args = {
